@@ -6,7 +6,8 @@ import {
 } from 'firebase/firestore'
 import { LogBox } from 'react-native';
 import { getAuth } from 'firebase/auth';
-import { APP_CONSTANT } from './global';
+import { getStorage} from "firebase/storage";
+///import { APP_CONSTANT } from './global';
 LogBox.ignoreLogs(['Setting a timer'])
 LogBox.ignoreLogs(['AsyncStorage has been extracted from react-native core'])
 
@@ -34,6 +35,12 @@ const firebaseConfig = {
 const firebaseApp = initializeApp(firebaseConfig);
 export const auth = getAuth(firebaseApp)
 export const db = getFirestore()
+export const storage = getStorage()
+
+
+
+
+
 export const ordersCol = collection(db, 'orders')
 export const getOrdersSimple = () => {
   const q = query(ordersCol, orderBy('createdAt', 'desc'), limit(1))

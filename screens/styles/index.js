@@ -5,7 +5,7 @@ import { Dimensions } from 'react-native'
 
 export const Cont = styled.SafeAreaView`
     height: fit-content;
-   background-color:red;
+  
     padding: 3px;
     align-items: center;
     color:white;
@@ -22,7 +22,7 @@ export const TextStyle = styled.Text`
     padding-bottom: 5px;
     margin-top:22px;
     margin-bottom:22px;
-    background-color: ${props => props.backgroundColor || 'green'};
+  
 
   
    
