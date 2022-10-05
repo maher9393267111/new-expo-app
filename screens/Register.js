@@ -19,7 +19,7 @@ export default function Register() {
 
    
       <TextStyle  backgroundColor ={'#ABB1CC'} >
-          Hello red
+          Hello red maher
       
       </TextStyle>
      
