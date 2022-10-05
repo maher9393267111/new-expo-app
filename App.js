@@ -5,9 +5,8 @@ import {} from "./firebase"
 import { Entypo } from '@expo/vector-icons'; 
 import { AntDesign } from '@expo/vector-icons';
 
-import { SongListScreen } from "./screens/SongListScreen";
+import Home from "./screens/Home";
 import { Provider } from "react-native-paper";
-import { AppNavigator } from "./navigation/AppNavigator";
 
 
 export default function App() {
@@ -15,7 +14,9 @@ export default function App() {
   return (
      
     <Provider>
-    <AppNavigator />
+    
+<Home/>
+
   </Provider>
       
   

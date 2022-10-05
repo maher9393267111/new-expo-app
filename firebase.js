@@ -69,7 +69,7 @@ export const addDriver = async (userCredentials, name, phone) => {
   })
     .then(() => console.log('user create'))
 }
-const addOrder = async () => {
+export  const addOrder = async () => {
   const docRef = await addDoc(collection(db, "orders"), {
     Restaurant: {
       name: "Pizza Hutttz58",
