@@ -5,7 +5,7 @@ import {} from "./firebase"
 import { Entypo } from '@expo/vector-icons'; 
 import { AntDesign } from '@expo/vector-icons';
 
-import Home from "./screens/Home";
+//import Home from "./screens/Home";
 import { Provider } from "react-native-paper";
 import RegisterScreen from './screens/Register'
 
@@ -17,7 +17,14 @@ export default function App() {
     <Provider>
     
 {/* <Home/> */}
+
+{/* <Text className=" mt-12  bg-blue-400">asasas</Text> */}
+
 <RegisterScreen/>
+
+
+
+
   </Provider>
       
   
