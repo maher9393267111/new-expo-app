@@ -7,6 +7,7 @@ import { AntDesign } from '@expo/vector-icons';
 
 import Home from "./screens/Home";
 import { Provider } from "react-native-paper";
+import RegisterScreen from './screens/Register'
 
 
 export default function App() {
@@ -15,8 +16,8 @@ export default function App() {
      
     <Provider>
     
-<Home/>
-
+{/* <Home/> */}
+<RegisterScreen/>
   </Provider>
       
   
