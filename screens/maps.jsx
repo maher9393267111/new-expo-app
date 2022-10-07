@@ -1,17 +1,43 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-import {signup} from '../config/api'
-import { Button } from 'react-native-paper'
 
-export default function Deneme() {
+import { View ,Text } from "native-base";
+
+import MapView, { Marker } from "react-native-maps";
+import { PROVIDER_GOOGLE } from "react-native-maps";
+//import { mapStyle } from "../theming/mapStyle";
+import { StyleSheet } from "react-native";
+
+import * as Location from "expo-location";
+import { useContext, useRef, useState, useEffect } from "react";
+
+
+export default function DENEME() {
+
+
+    const [location, setLocation] = useState();
+    const map = useRef();
+  
+    useEffect(() => {
+      (async () => {
+        let { status } = await Location.requestForegroundPermissionsAsync();
+        if (status !== "granted") {
+          return;
+        }
+        let location = await Location.getCurrentPositionAsync({
+          accuracy: Location.Accuracy.Balanced,
+          enableHighAccuracy: true,
+          timeInterval: 5,
+        });
+        setLocation(location.coords);
+        console.log('LOCATION--->' , location)
+      })();
+    }, []);
+  
+
+
+
   return (
     <View>
-      <Text>SignUp with me here</Text>
-
-      <Button className="mt-24" icon="camera" mode="contained" onPress={signup}>
-    Register Now
-  </Button>
-
+      <Text>DENEME</Text>
     </View>
   )
 }
