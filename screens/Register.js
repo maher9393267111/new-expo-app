@@ -116,7 +116,7 @@ export default function Register() {
           <Text 
           className=' text-center mb-4  w-1/2 mx-auto   bg-red-400 text-white text-2xl font-bold rounded-lg'
           
-          >Register</Text>
+          >RegisterPAGE</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={handleSignIn} 
         
