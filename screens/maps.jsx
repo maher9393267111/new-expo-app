@@ -100,6 +100,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#40B880',
         alignSelf: 'flex-end',
       },
+      
       center: {
         alignSelf: 'center',
         top: 13,
